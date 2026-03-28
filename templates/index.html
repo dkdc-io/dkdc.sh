@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+
+{% block content %}
+<section class="hero">
+    <div class="hero__inner">
+        <h1 class="hero__title"><a href="https://dkdc.io" class="text-accent">dkdc.io</a> <span class="text-secondary">install scripts</span></h1>
+    </div>
+</section>
+
+<section class="scripts">
+    <div class="scripts__inner">
+        {{ section.content | safe }}
+    </div>
+</section>
+{% endblock content %}
+
+{% block extra_body %}
+<script>
+(function() {
+  document.querySelectorAll('.script-card__copy').forEach(function(btn) {
+    btn.addEventListener('click', function() {
+      var cmd = this.getAttribute('data-cmd');
+      navigator.clipboard.writeText(cmd).then(function() {
+        btn.classList.add('copied');
+        setTimeout(function() { btn.classList.remove('copied'); }, 1500);
+      });
+    });
+  });
+})();
+</script>
+{% endblock extra_body %}

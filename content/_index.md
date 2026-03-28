@@ -1,0 +1,9 @@
++++
+title = "dkdc.sh"
++++
+
+{{ install(name="bookmarks", display_name="Bookmarks", url="https://dkdc.io/bookmarks", github="lostmygithubaccount/bookmarks", description="Bookmarks in your filesystem.") }}
+
+{{ install(name="md-cli", display_name="MotherDuck CLI", url="https://dkdc.io/md-cli", github="lostmygithubaccount/md-cli", description="CLI for the MotherDuck REST API.") }}
+
+{{ install(name="zorto", display_name="Zorto", url="https://zorto.dev", github="lostmygithubaccount/zorto", description="A fast static site generator with executable code blocks inspired by Zola & Quarto.") }}
