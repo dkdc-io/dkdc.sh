@@ -28,4 +28,4 @@ favicon_mimetype = "image/png"
 
 menu_items = []
 
-copyright_html = '<a href="/">dkdc.sh</a> by <a href="https://dkdc.dev" target="_blank" rel="noopener">dkdc.dev</a> via <a href="https://zorto.dev" target="_blank" rel="noopener">Zorto</a>'
+copyright_html = '<a href="/">dkdc.sh</a> by <a href="https://dkdc.io" target="_blank" rel="noopener">dkdc.io</a> via <a href="https://zorto.dev" target="_blank" rel="noopener">Zorto</a>'
