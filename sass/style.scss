@@ -317,13 +317,40 @@ pre {
 }
 
 // ========================================
+// Navbar icon link (GitHub, etc.)
+// ========================================
+.navbar__icon-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: auto;
+  flex-shrink: 0;
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  width: 36px;
+  height: 36px;
+  color: var(--color-muted);
+  transition: all 0.2s ease;
+
+  svg {
+    width: 18px;
+    height: 18px;
+  }
+
+  &:hover {
+    color: var(--color);
+    border-color: var(--color-muted);
+  }
+}
+
+// ========================================
 // Theme toggle
 // ========================================
 .theme-toggle {
   display: none; // shown via JS
   align-items: center;
   justify-content: center;
-  margin-left: auto;
+  margin-left: 0;
   flex-shrink: 0;
   background: transparent;
   border: 1px solid var(--border-color);
