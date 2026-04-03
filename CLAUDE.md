@@ -12,7 +12,7 @@ Install scripts for dkdc projects. Built with [Zorto](https://zorto.dev/).
 Scripts live in `static/` and are served as raw files:
 
 - `/bookmarks/install.sh` — install bookmarks from source
-- `/dkdc-links/install.sh` — install dkdc-links from source
+- `/lm/install.sh` — install lm via uv
 - `/md-cli/install.sh` — install md-cli from source
 - `/zorto/install.sh` — install zorto from source
 
