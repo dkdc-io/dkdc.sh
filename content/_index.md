@@ -10,4 +10,6 @@ title = "dkdc.sh"
 
 ## incubating
 
+{{ install(name="db", display_name="dkdc-db", url="https://dkdc.io/db", github="dkdc-io/db", description="HTAP embedded database.") }}
+
 {{ install(name="lm", display_name="dkdc-lm", url="https://dkdc.io/lm", github="dkdc-io/lm", description="Language model service.") }}
