@@ -6,8 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
     <meta name="robots" content="noodp"/>
 
+    <style>html.no-transitions,html.no-transitions *{transition:none!important}</style>
     <script>
       (function() {
+        document.documentElement.classList.add('no-transitions');
         var saved = localStorage.getItem('theme');
         var preferLight = window.matchMedia('(prefers-color-scheme: light)').matches;
         if (saved === 'light' || (!saved && preferLight)) {
@@ -160,5 +162,6 @@
 
 
 {%- block extra_body %}{% endblock extra_body %}
+<script>requestAnimationFrame(function(){document.documentElement.classList.remove('no-transitions')})</script>
 </body>
 </html>
