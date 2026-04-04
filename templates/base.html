@@ -6,18 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
     <meta name="robots" content="noodp"/>
 
-    <link rel="stylesheet" href="/style.css">
-
     <script>
-      // Prevent flash of wrong theme
       (function() {
-        const saved = localStorage.getItem('theme');
-        const preferLight = window.matchMedia('(prefers-color-scheme: light)').matches;
+        var saved = localStorage.getItem('theme');
+        var preferLight = window.matchMedia('(prefers-color-scheme: light)').matches;
         if (saved === 'light' || (!saved && preferLight)) {
           document.documentElement.setAttribute('data-theme', 'light');
         }
+        document.write('<link rel="stylesheet" href="/style.css" id="theme-stylesheet">');
       })();
     </script>
+    <noscript><link rel="stylesheet" href="/style.css" id="theme-stylesheet"></noscript>
 
     {%- if config.markdown.highlight_code and config.markdown.highlight_theme == "css" %}
     <link rel="stylesheet" href="/syntax-dark.css">
