@@ -6,11 +6,11 @@ title = "dkdc.sh"
 
 {{ install(name="draw", display_name="dkdc-draw", url="https://dkdc.io/draw", github="dkdc-io/draw", description="Local-first drawing tool.") }}
 
+{{ install(name="imessage-plugin", display_name="iMessage plugin", url="https://dkdc.io/imessage-plugin", github="dkdc-io/imessage-plugin", description="iMessage MCP plugin for any LLM CLI.") }}
+
 {{ install(name="md-cli", display_name="MotherDuck CLI", url="https://dkdc.io/md-cli", github="dkdc-io/md-cli", description="CLI for the MotherDuck REST API.") }}
 
 {{ install(name="zorto", display_name="Zorto", url="https://zorto.dev", github="dkdc-io/zorto", description="The AI-native static site generator (SSG) with executable code blocks.") }}
-
-## incubating
 
 {{ install(name="db", display_name="dkdc-db", url="https://dkdc.io/db", github="dkdc-io/db", description="HTAP embedded database.") }}
 
